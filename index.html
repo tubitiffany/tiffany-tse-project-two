@@ -5,115 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://kit.fontawesome.com/5f08e669b6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 
+<header> 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-bag"></i>
-                </a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">  
+            <nav>
+                <ul>
+                    <div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </div>
+                <h1 class="logo">Creative</h1>  
+                <div>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                </div>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
     <main>
-        <section class="brandingDesignDevelop">
-            <img src="./creative-assets/home-circle-text.png" alt="branding and website pros">
-            <img src="./creative-assets/home-2.jpeg" alt="home office with desktop screen, plant and calendar">
-            <div class="branding">
-                <h3>Branding</h3>
-                <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+        <section class="about">
+            <div class=aboutImaging>
+                <img class="aboutImage" src="./creative-assets/home-2.jpeg" alt="home office with desktop screen, plant and calendar">
+                <img class="aboutText" src="./creative-assets/home-circle-text.png" alt="branding and website pros">
             </div>
-            <div class="designDevelop">
-                <h3>Design & Develop</h3>
-                <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+            <div class=aboutInfo>
+                <div>
+                    <h3>Branding</h3>
+                    <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                </div>
+                <div>
+                    <h3>Design & Develop</h3>
+                    <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                </div>
             </div>
         </section>
 
+
         <section class="carousel">
-            <img src="./creative-assets/home-3.jpeg" alt="creative ad mock up">
+            <div class="carouselArrows">
+                <img src="./creative-assets/home-3.jpeg" alt="creative ad mock up">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+            </div>
             <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
         </section>
 
 
         <section class="offerings">
-            <div>
-                <i class="fas fa-magic"></i>
-                <h3>Unique Design</h3>
-                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
-            </div>
-            <div>
-                <i class="fas fa-desktop"></i>
-                <h3>Retina Ready</h3>
-                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
-            </div>
-            <div>
-                <i class="fas fa-sliders-h"></i>
-                <h3>Advanced Options</h3>
-                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
-            </div>
-            <div>
-                <i class="fas fa-map-pin"></i>
-                <h3>SEO Marketing</h3>
-                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
-            </div>
-            <div>
-                <i class="fas fa-shopping-bag"></i>
-                <h3>ECommerce Ready</h3>
-                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
-            </div>
-            <div>
-                <i class="far fa-smile"></i>
-                <h3>Customizable</h3>
-                <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+            <div class="offeringsList">
+                <div>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-magic fa-stack-1x"></i>
+                    </span>
+                    <h3>Unique Design</h3>
+                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                </div>
+                <div>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-desktop fa-stack-1x"></i>
+                    </span>
+                    <h3>Retina Ready</h3>
+                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                </div>
+                <div>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-sliders-h fa-stack-1x"></i>
+                    </span>
+                    <h3>Advanced Options</h3>
+                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                </div>
+                <div>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-map-pin fa-stack-1x"></i>
+                    </span>
+                    <h3>SEO Marketing</h3>
+                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                </div>
+                <div>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-shopping-bag fa-stack-1x"></i>
+                    </span>
+                    <h3>ECommerce Ready</h3>
+                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                </div>
+                <div>
+                    <span class="fa-stack fa-2x">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="far fa-smile fa-stack-1x invert"></i>
+                    </span>
+                    <h3>Customizable</h3>
+                    <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                </div>
             </div>
         </section>
 
         <section class="team">
-            <h2>Meet our team</h2>
-            <div class="teamPlayers">
-                </h4>Team Players</h4>
-                <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
-            </div>
-            <div class="teamImages">
-                <ul>
-                    <li><img src="./creative-assets/home-5.jpeg" alt=""></li>
-                    <li><img src="./creative-assets/home-6.jpeg" alt=""></li>
-                    <li><img src="./creative-assets/home-7.jpeg" alt=""></li>
-                    <li><img src="./creative-assets/home-8.jpeg" alt=""></li>
-                    <li><img src="./creative-assets/home-9.jpeg" alt=""></li>
+            <h2>Meet our team</h2>   
+                <ul class="wrapper">
+                    <li class="teamPlayers">
+                        <h4>Team Players</h4>
+                        <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
+                    </li>
+                    <li class="teamRow1Item2">
+                        <img src="./creative-assets/home-5.jpeg" alt="Matt CEO of our team">
+                    </li>
+                    <li class="teamRow1Item3">
+                        <img src="./creative-assets/home-6.jpeg" alt="Emily Vice President of our team">
+                    </li>
+                    <li>
+                        <img src="./creative-assets/home-7.jpeg" alt="Sarah Chief Marketing officer of our team">
+                    </li>
+                    <li>
+                        <img src="./creative-assets/home-8.jpeg" alt="Mike Chief Technology Officer of our team">
+                    </li>
+                    <li>
+                        <img src="./creative-assets/home-9.jpeg" alt="Alex Head of Human Resources">
+                    </li>
+                    <li class="workWithUs">
+                        <h4>Want to work with us!</h4>
+                    </li>
                 </ul>
-            </div>
-            <div class="workWithUs">
-                <h4>Want to work with us!</h4>
-            </div>
         </section>
 
         <section class="dropUsALine">
-            <h2>Drop us a line</h2>
-            <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
-            <button>View Portfolio</button>
+            <div class="dropUsALineText">
+                <h2>Drop us a line</h2>
+                <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
+                <button>View Portfolio</button>
+            </div>
+            <div class="dropUsALineImg">
+                <img src="./creative-assets/home-10.jpeg" alt="office desk with phone laying face up">
+            </div>
         </section>
+
     </main>
 
     <footer>
+        <div class="footerInfo">
         <div class="contactUs">
             <h3>Contact Us</h3>
             <p>6591 Orchard Street, Toronto, Ontario</p>
             <p>Email: contact@creative.com</p>
             <p>Phone 01: 123 456 7890</p>
             <p>Phone 02: 345 678 9101</p>
-            <ul>
+            <ul class=socialMediaIcons>
                 <li><i class="fab fa-facebook-f"></i></li>
                 <li><i class="fab fa-twitter"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
@@ -134,13 +185,15 @@
             <h3>Subscribe Now</h3>
             <p>Signup for emails and notifications below.</p>
             <form action="#" method="#" class="mailingForm" name="mailingForm">
-                <input type="email" id="mailingForm" name="mailingForm" placeholder="Enter your email">
+                <!-- <label for="email">enter your email:</label> -->
+                <input type="email" id="email" name="email" placeholder="Enter your email">
                 <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
             </form>
         </div>
-        <div class="creativeAgency">
+    </div>  
+        <div class="creativeAgency">    
             <h5>Creative Agency</h5>
         </div>
     </footer>
+    </html>
 </body>
-</html>

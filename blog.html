@@ -5,58 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <script src="https://kit.fontawesome.com/5f08e669b6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header>
-            <ul>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-bag"></i>
-                </a></li>
-            </ul>
-        </nav>
+    <header> 
+        <div class="wrapper">  
+            <nav>
+                <ul>
+                    <div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </div>
+                <h1 class="logo">Creative</h1>  
+                <div>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                </div>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="blogPost"> 
+
+    <main class="blogPost">
+        <section class="wrapper"> 
             <h1>How to run a creative agency</h1>
-            <p>Home / Blog / <span>How to Run a Creative Agency</span></p>
+            <p>Home / Blog / <span class="breadCrumbs">How to Run a Creative Agency</span></p>
             
             <div class="blogInfo">
+                <div>
+                    <img src="./creative-assets/home-9.jpeg" alt="Profile picture of Alex the blog posts author">
+                </div>
                 <div class="blogAuthor">
-                    <img src="./creative-assets/home-9.jpeg" alt="">
                     <h3>Alex</h3>
                     <p>Administrator</p>
                 </div>
-                <div class="blogDate">
+                <div>
                     <h3>Date</h3>
                     <p>July 31, 2018</p>
                 </div>
-                <div class="blogCategory">
+                <div>
                     <h3>Category</h3>
                     <p>Entertainment, Business</p>
                 </div>
-                <div class="blogTags">
+                <div>
                     <h3>Tags</h3>
                     <p>Design, Web, Lifestyle, Site</p>
                 </div>
+            </div>
 
-                <hr>
 
-                <div class="blogContent">
-                    <p><span>Analytics bandwidth bootstrapping seed round varility infographic ownership long tall gen-z stealth channels growth hacking ecosystem. Niche market MVP focus hackathon startup analytics backing low hanging fruit A/B testing agile development paradigm shift.
-                    </span></p>
-                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                </div>
-
+            <div class="blogContent">
+                <p>Analytics bandwidth bootstrapping seed round varility infographic ownership long tall gen-z stealth channels growth hacking ecosystem. Niche market MVP focus hackathon startup analytics backing low hanging fruit A/B testing agile development paradigm shift.
+                </p>
+                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
                 <div class="share">
                     <h3>Share:</h3>
                     <ul>
@@ -65,55 +74,63 @@
                         <li><i class="fab fa-instagram"></i></li>
                     </ul>
                 </div>
+            </div>
         </section>
 
 
-        <section class="relatedPosts">
+        <section class="relatedPosts wrapper">
             <h2>Related Posts</h2>
-            <hr>
+            <div class="posts">
                 <div class="postOne">
-                    <img src="./creative-assets/blog-3.jpeg" alt="">
+                    <img src="./creative-assets/blog-3.jpeg" alt="Home office desk with lamp, plans and laptop">
                     <h4>July, 25, 2018</h4>
                 </div>
                 <div class="postTwo">
-                    <img src="./creative-assets/blog-4.jpeg" alt="">
+                    <img src="./creative-assets/blog-4.jpeg" alt="Home decorations on a table">
                     <h4>July, 26, 2018</h4>
                 </div>
-                <div class="postThree">
-                    <img src="./creative-assets/blog-5.jpeg" alt="">
+                    <div class="postThree">
+                    <img src="./creative-assets/blog-5.jpeg" alt="birds eye view of coffee, succulent, iphone and laptop">
                     <h4>July, 28, 2018</h4>
                 </div>
+            </div>
         </section>
 
-        <section class="comments">
+        <section class="comments wrapper">
             <h2>02 Comments</h2>
-            <hr>
-            <div class="commentOne">
-                <div class="commentOnePic">
-                    <img src="./creative-assets/blog-6.jpeg" alt="">
+            <div class="commentInfo">
+                <div class="commentPic">
+                    <img src="./creative-assets/blog-6.jpeg" alt="Profile picture of commentor Daniel Vandaft">
                 </div>
-                <div class="commentOneInfo">
-                    <h3>Daniel Vandaft</h3><span>- Reply</span>
-                    <p class="commentText">Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.</p>
-                    <p>July 17, 2015 at 15 hours ago</p>
+                <div class="commentBox">
+                        <span class="tip tip-left"></span>
+                        <div class="commentText">
+                            <h3>Daniel Vandaft <span>- Reply</span></h3>
+                            <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding.</p>
+                            <p class="commentTime">July 17, 2015 at 15 hours ago</p>
+                        </div>
                 </div>
             </div>
-            <div class="commentTwo">
-                <div class="commentTwoPic">
-                    <img src="./creative-assets/blog-7.jpeg" alt="">
+
+            <div class="commentInfo">
+                <div class="commentPic">
+                    <img src="./creative-assets/blog-7.jpeg" alt="Profile picture of commentor Jenifer Loopz">
                 </div>
-                <div class="commentTwoInfo">
-                    <h3>Jenifer Loopz</h3><span>- Reply</span>
-                    <p class="commentText">Pitch agile development business plan stealth channels protoype mass market product management value proposition startup strategy.</p>
-                    <p>July 17, 2015 at 15 hours ago</p>
+                <div class="commentBox">
+                    <span class="tip tip-left"></span>
+                    <div class="commentText">
+                        <h3>Jenifer Loopz<span>- Reply</span></h3>
+                        <p>Pitch agile development business plan stealth channels protoype mass market product management value proposition startup strategy.</p>
+                        <p class="commentTime">July 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="leaveAComment">
+        <section class="leaveAComment wrapper">
             <h2>Leave a comment</h2>
-            <hr>
-            <form action="">
+    
+            <form action="#">
                 <label for="name" class="visuallyHidden">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name...">
     
@@ -132,40 +149,42 @@
     </main>
 
     <footer>
-        <div class="contactUs">
-            <h3>Contact Us</h3>
-            <p>6591 Orchard Street, Toronto, Ontario</p>
-            <p>Email: contact@creative.com</p>
-            <p>Phone 01: 123 456 7890</p>
-            <p>Phone 02: 345 678 9101</p>
-            <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
-        </div>
-        <div class="recentPosts">
-            <h3>Recent Posts</h3>
-            <ul>
-                <li><p>Conversion hackathon partner</p></li>
-                <li><p>Network channels entrepreneur</p></li>
-                <li><p>Return on investment creative</p></li>
-                <li><p>Assets interaction design venture</p></li>
-                <li><p>Infographic learning curve</p></li>
+        <div class="footerInfo">
+            <div class="contactUs">
+                <h3>Contact Us</h3>
+                <p>6591 Orchard Street, Toronto, Ontario</p>
+                <p>Email: contact@creative.com</p>
+                <p>Phone 01: 123 456 7890</p>
+                <p>Phone 02: 345 678 9101</p>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+            <div class="recentPosts">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><p>Conversion hackathon partner</p></li>
+                    <li><p>Network channels entrepreneur</p></li>
+                    <li><p>Return on investment creative</p></li>
+                    <li><p>Assets interaction design venture</p></li>
+                    <li><p>Infographic learning curve</p></li>
 
-            </ul>
+                </ul>
+            </div>
+            <div class="subscribeNow">
+                <h3>Subscribe Now</h3>
+                <p>Signup for emails and notifications below.</p>
+                <form action="#" method="#" class="mailingForm" name="mailingForm">
+                    <input type="email" id="mailingForm" name="mailingForm" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </div>
         </div>
-        <div class="subscribeNow">
-            <h3>Subscribe Now</h3>
-            <p>Signup for emails and notifications below.</p>
-            <form action="#" method="#" class="mailingForm" name="mailingForm">
-                <input type="email" id="mailingForm" name="mailingForm" placeholder="Enter your email">
-                <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
-            </form>
-        </div>
-        <div class="creativeAgency">
-            <h5>Creative Agency</h5>
-        </div>
+            <div class="creativeAgency">
+                <h5>Creative Agency</h5>
+            </div>
     </footer>
 </body>
 </html>
