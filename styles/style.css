@@ -203,7 +203,7 @@ template {
   display: none;
 }
 
-.visuallyhidden {
+.visuallyHidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -605,7 +605,6 @@ footer h3 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0px 0px 60px 0px;
 }
 
 .contactUs ul {
@@ -827,10 +826,107 @@ p.commentTime {
   width: 100%;
 }
 
-form label {
-  visibility: hidden;
+form {
+  margin: 50px 0px 100px 0px;
 }
 
 form input {
   font-size: 1.4rem;
+}
+
+input[type=text],
+.leaveAComment input[type=email],
+.getInTouch input[type=email],
+input[type=text] {
+  width: calc((100% / 3) - 40px / 2);
+  border: 0px;
+  border-bottom: 1px solid grey;
+  margin-right: 20px;
+}
+
+input:nth-of-type(3) {
+  margin-right: 0px;
+}
+
+input[type=textarea] {
+  margin-top: 40px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 0px;
+  border-bottom: 1px solid grey;
+}
+
+.leaveAComment form button,
+.getInTouch form button {
+  padding: 20px 0px 10px 0px;
+  margin: 20px 0px;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+}
+
+header.contactPage {
+  height: auto;
+  background: white;
+}
+
+.contactPageMain h1 {
+  font-size: 3.7rem;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  text-align: left;
+  margin-top: 0px;
+  width: 200px;
+  line-height: 30px;
+}
+
+.contactPageMain {
+  background-image: url(./../creative-assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  width: 100vw;
+}
+
+.contactDetails {
+  padding-top: 80px;
+}
+
+.contactPageMain h3,
+.contactPageMain p,
+.contactPageMain h4 {
+  text-align: left;
+}
+
+.contactDetails h3,
+.getInTouch h3,
+.contactDetails h4 {
+  font-weight: bold;
+}
+
+.contactDetails h4 {
+  margin-top: 0px;
+}
+
+.contactInfo div {
+  width: calc(100vw / 3);
+  padding-left: 70px;
+}
+
+.contactInfo div:nth-of-type(2) {
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+}
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 60px 0px;
+}
+
+.contactInfo i {
+  font-size: 2.4rem;
 }
