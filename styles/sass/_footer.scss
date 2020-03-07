@@ -1,0 +1,75 @@
+// footer styles
+footer,
+footer h3 {
+    background:#333333;
+    color: white;    
+    line-height: 20px;
+}
+
+footer h3{
+    margin: 60px 0px 30px 0px;
+}
+
+
+.footerInfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactUs ul {
+    display: flex;
+    font-size: 1.3rem;
+    width: 100px;
+    justify-content: flex-start;
+    justify-content: space-between;
+
+}
+
+.contactUs p,
+.recentPosts p {
+    text-align: left;
+}
+
+.recentPosts ul {
+    list-style-type: disc;
+}
+
+
+.subscribeNow h3,
+.subscribeNow {
+    text-align: right;
+}
+
+.footerForm form {
+    display: inline-block;
+    height: 100px;
+}
+
+.footerForm button {
+    position: absolute;
+    background-color: #C3DAB7;
+    height: 50px;
+}
+
+.footerForm input {
+    height: 50px;
+    width: 300px;
+    border: none;
+    position: relative;
+    font-size: 1.5rem;
+    padding-left: 30px;
+}
+
+.creativeAgency {
+    height: 150px;
+    border-top: 1px solid grey;
+    text-align: center;
+}
+
+.creativeAgency h5 {
+    font-size: 1.4rem;
+    width: 100%;
+    color: white;
+    letter-spacing: 5px;
+    margin-top: 75px;
+}

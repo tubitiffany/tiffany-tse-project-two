@@ -1,0 +1,39 @@
+
+// Leave a comment FORM
+.getInTouch form {
+    margin: 50px 0px 100px 0px;
+}
+
+
+input[type=text],
+.leaveAComment input[type=email],
+.getInTouch input[type=email],
+input[type=text] {
+    width: calc((100% / 3) - 40px / 2);
+    border: 0px;
+    border-bottom: 1px solid grey;
+    margin-right: 20px;
+}
+
+input:nth-of-type(3) {
+    margin-right: 0px;
+}
+
+input[type=textarea] {
+    margin-top: 40px;
+    width: 100%;
+    height: 200px;
+    resize: none;    
+    border: 0px;
+    border-bottom: 1px solid grey;
+}
+
+.leaveAComment form button,
+.getInTouch form button  {
+    padding: 20px 0px 10px 0px;
+    margin: 20px 0px;
+    border-bottom: 1px solid black;
+    font-weight: 400;
+}
+
+

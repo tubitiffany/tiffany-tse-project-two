@@ -1,0 +1,62 @@
+header.contactPage {
+    height: auto;
+    background: white;
+}
+
+.contactPageMain h1 {
+    font-size: 3.7rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+    text-align: left;
+    margin-top: 0px;
+    width: 200px;
+    line-height: 30px;
+}
+
+.contactPageMain {
+    background-image: url(./../creative-assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 100vw;
+}
+
+.contactDetails {
+    padding-top: 80px;
+}
+
+.contactPageMain h3,
+.contactPageMain p,
+.contactPageMain h4 {
+    text-align: left;
+}
+
+.contactDetails h3,
+.getInTouch h3,
+.contactDetails h4 {
+    font-weight: bold;
+}
+
+.contactDetails h4{
+    margin-top: 0px;
+}
+
+.contactInfo div {
+    width: calc(100vw / 3);
+    padding-left: 70px;
+}
+
+.contactInfo div:nth-of-type(2) {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 0px;
+}
+
+.contactInfo i {
+    font-size: 2.4rem;
+}

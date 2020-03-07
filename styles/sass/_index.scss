@@ -1,0 +1,212 @@
+// INDEX PAGE HIGH LEVEL STYLES
+
+.primaryBackground {
+    background-color: $primaryBackground;
+}
+
+.secondaryBackground {
+    background-color: $secondaryBackground;
+}
+
+.carousel .fas:hover,
+.dropUsALineText p,
+.carousel p,
+p.commentTime,
+.blogPost p,
+.offeringsList p,
+.teamPlayers p  {
+    color: $secondaryColor;
+}
+
+.about,
+.carousel,
+.team,
+.offerings {
+    padding: 100px 0px;
+
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+// ABOUT SECTION
+.aboutImaging {
+    position: relative;
+}
+
+.aboutText {
+    position: absolute;
+    top: -20px;
+    left: 25%;
+}
+
+.aboutImage {
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.aboutInfo {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutInfo div {
+    width: 350px;
+}
+
+
+
+// CAROUSEL SECTION
+.carousel img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.carousel p {
+    font-style: italic;
+    text-align: center;
+    width: 700px;
+    margin: 30px auto;
+}
+
+// CAROUSEL ARROWS
+.carousel i {
+    font-size: 3.5rem;
+}
+
+.carouselArrows {
+    position: relative;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    position: absolute;
+    top: 50%;
+}
+
+.fa-chevron-left {
+    left: 0%;
+}
+
+.fa-chevron-right {
+    right: 0%;
+}
+
+
+
+
+// OFFERINGS SECTION
+.offerings {
+    background-image: url(../creative-assets/home-4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offeringsList {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 300px;
+    grid-template-rows: 125px 125px 125px;
+    grid-row-gap: 40px;
+    grid-column-gap: 60px;
+    justify-content: end;
+    align-content: center;
+    padding-right: 30px;
+    }
+
+
+.offeringsList div p,
+.offeringsList div h3 {
+    width: 270px;
+}
+
+.offeringsList div {
+    position: relative;
+}
+
+.offeringsList span {
+    position: absolute;
+    top: 50%;
+    left: -65px;
+}
+
+
+
+// TEAM SECTION
+
+.team h2 {
+    margin-bottom: 70px;
+}
+
+.teamPlayers {
+    max-height: 270px; 
+    padding: 15% 5% 10% 5%;
+}
+
+.team ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+}
+
+.teamPlayers {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.workWithUs h4 {
+    width: 150px;
+    text-align: center;
+}
+
+.workWithUs {
+    margin: auto auto;
+}
+
+.team ul li {
+    flex-shrink: 1;
+}
+
+/* --  end of team section style -- */
+
+
+// Drop Us a Line Section
+.dropUsALine {
+    display: flex;
+    max-height: 600px;
+}
+
+.dropUsALineImg img {
+    width: 50vw;
+    max-height: 600px;
+    display: block;
+}
+
+.dropUsALineText {
+    margin: auto auto;
+    width: 500px;
+}
+
+.dropUsALineText p {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+button {
+    padding: 15px 20px;
+    font-family: 'Montserrat';
+    letter-spacing: 0.6px;;
+    border: none;
+    margin: 0 auto;
+}
+// end of drop us a line styles

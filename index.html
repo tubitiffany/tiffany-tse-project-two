@@ -6,16 +6,15 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/5f08e669b6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 
 <header> 
-<body>
-        <div class="wrapper">  
-            <nav>
-                <ul>
-                    <div>
+    <div class="wrapper">  
+        <nav>
+            <ul>
+                <div>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Portfolio</a></li>
@@ -27,18 +26,23 @@
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
                 </div>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 
+<body>
     <main>
-        <section class="about">
+        <section class="about primaryBackground">
+
             <div class=aboutImaging>
-                <img class="aboutImage" src="./creative-assets/home-2.jpeg" alt="home office with desktop screen, plant and calendar">
-                <img class="aboutText" src="./creative-assets/home-circle-text.png" alt="branding and website pros">
+                <img class="aboutImage" src="./creative-assets/home-2.jpeg" alt="home office with desktop screen, plant and calendar"> 
+                <div class="aboutText">
+                    <img class="aboutText" src="./creative-assets/home-circle-text.png" alt="branding and website pros">
+                </div>
             </div>
+
             <div class=aboutInfo>
                 <div>
                     <h3>Branding</h3>
@@ -52,7 +56,7 @@
         </section>
 
 
-        <section class="carousel">
+        <section class="carousel wrapper">
             <div class="carouselArrows">
                 <img src="./creative-assets/home-3.jpeg" alt="creative ad mock up">
                 <i class="fas fa-chevron-left"></i>
@@ -118,7 +122,7 @@
         <section class="team">
             <h2>Meet our team</h2>   
                 <ul class="wrapper">
-                    <li class="teamPlayers">
+                    <li class="teamPlayers secondaryBackground">
                         <h4>Team Players</h4>
                         <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
                     </li>
@@ -143,7 +147,7 @@
                 </ul>
         </section>
 
-        <section class="dropUsALine">
+        <section class="dropUsALine primaryBackground">
             <div class="dropUsALineText">
                 <h2>Drop us a line</h2>
                 <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
@@ -184,11 +188,11 @@
         <div class="subscribeNow">
             <h3>Subscribe Now</h3>
             <p>Signup for emails and notifications below.</p>
-            <form action="#" method="#" class="mailingForm" name="mailingForm">
-                <!-- <label for="email">enter your email:</label> -->
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
-            </form>
+                <form action="#" method="#" class="footerForm" name="footerForm">
+                    <!-- <label for="email">enter your email:</label> -->
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
         </div>
     </div>  
         <div class="creativeAgency">    
