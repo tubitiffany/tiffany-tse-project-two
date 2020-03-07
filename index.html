@@ -15,14 +15,16 @@
         <nav>
             <ul>
                 <div>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#portfolioLink">Portfolio</a></li>
                 </div>
-                <h1 class="logo">Creative</h1>  
+                <a href="index.html">
+                    <h1 class="logo">Creative</h1>  
+                </a>  
                 <div>
                     <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
                 </div>
@@ -66,8 +68,8 @@
         </section>
 
 
-        <section class="offerings">
-            <div class="offeringsList">
+        <section id="portfolioLink" class="portfolio">
+            <div class="portfolioList">
                 <div>
                     <span class="fa-stack fa-2x">
                         <i class="far fa-circle fa-stack-2x"></i>
@@ -126,10 +128,10 @@
                         <h4>Team Players</h4>
                         <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
                     </li>
-                    <li class="teamRow1Item2">
+                    <li>
                         <img src="./creative-assets/home-5.jpeg" alt="Matt CEO of our team">
                     </li>
-                    <li class="teamRow1Item3">
+                    <li>
                         <img src="./creative-assets/home-6.jpeg" alt="Emily Vice President of our team">
                     </li>
                     <li>
@@ -189,8 +191,7 @@
             <h3>Subscribe Now</h3>
             <p>Signup for emails and notifications below.</p>
                 <form action="#" method="#" class="footerForm" name="footerForm">
-                    <!-- <label for="email">enter your email:</label> -->
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="enter your email">
                     <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                 </form>
         </div>

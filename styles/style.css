@@ -579,6 +579,7 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
+  margin: 0px;
 }
 
 h4 {
@@ -603,6 +604,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header ul {
@@ -639,7 +641,7 @@ footer h3 {
 }
 
 footer h3 {
-  margin: 60px 0px 30px 0px;
+  margin-bottom: 30px;
 }
 
 .footerInfo {
@@ -678,24 +680,30 @@ footer h3 {
   text-align: right;
 }
 
-.footerForm form {
-  display: inline-block;
-  height: 100px;
+.footerForm {
+  position: relative;
+  margin-top: 30px;
 }
 
 .footerForm button {
-  position: absolute;
+  display: inline-block;
   background-color: #C3DAB7;
+  width: 50px;
   height: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+  border: none;
 }
 
-.footerForm input {
+.footerForm input[type=email] {
   height: 50px;
   width: 300px;
   border: none;
-  position: relative;
   font-size: 1.5rem;
-  padding-left: 30px;
+  display: inline-block;
+  margin-right: 0px;
+  padding-left: 20px;
 }
 
 .creativeAgency {
@@ -712,17 +720,15 @@ footer h3 {
   margin-top: 75px;
 }
 
-.getInTouch form {
-  margin: 50px 0px 100px 0px;
+form {
+  margin-bottom: 60px;
 }
 
 input[type=text],
-.leaveAComment input[type=email],
-.getInTouch input[type=email],
-input[type=text] {
+input[type=email] {
   width: calc((100% / 3) - 40px / 2);
   border: 0px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
   margin-right: 20px;
 }
 
@@ -733,18 +739,23 @@ input:nth-of-type(3) {
 input[type=textarea] {
   margin-top: 40px;
   width: 100%;
-  height: 200px;
   resize: none;
   border: 0px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 100px;
 }
 
-.leaveAComment form button,
-.getInTouch form button {
+form button {
   padding: 20px 0px 10px 0px;
   margin: 20px 0px;
   border-bottom: 1px solid black;
-  font-weight: 400;
+  background: white;
+}
+
+.contactDetails h3,
+.getInTouch h3,
+.contactDetails h4 {
+  font-weight: bold;
 }
 
 header.contactPage {
@@ -754,12 +765,11 @@ header.contactPage {
 
 .contactPageMain h1 {
   font-size: 3.7rem;
-  font-weight: bold;
   letter-spacing: 0.9px;
-  text-align: left;
-  margin-top: 0px;
+  margin: -10px 0 80px 0px;
   width: 200px;
-  line-height: 30px;
+  line-height: 50px;
+  padding-top: 70px;
 }
 
 .contactPageMain {
@@ -770,29 +780,10 @@ header.contactPage {
   width: 100vw;
 }
 
-.contactDetails {
-  padding-top: 80px;
-}
-
-.contactPageMain h3,
-.contactPageMain p,
-.contactPageMain h4 {
-  text-align: left;
-}
-
-.contactDetails h3,
-.getInTouch h3,
-.contactDetails h4 {
-  font-weight: bold;
-}
-
-.contactDetails h4 {
-  margin-top: 0px;
-}
-
 .contactInfo div {
   width: calc(100vw / 3);
   padding-left: 70px;
+  margin: 70px 0px;
 }
 
 .contactInfo div:nth-of-type(2) {
@@ -806,15 +797,37 @@ header.contactPage {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 120px 0px;
+  margin: 10px 0px;
 }
 
 .contactInfo i {
   font-size: 2.4rem;
 }
 
+.blogContent,
+.share,
+.posts,
+.comments,
+.leaveAComment,
+form {
+  margin-top: 80px;
+}
+
+.blogPost h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgrey;
+  text-align: left;
+}
+
 .breadCrumbs {
   font-weight: 600;
+  color: black;
+}
+
+.blogInfo {
+  margin-top: 30px;
 }
 
 .blogInfo img {
@@ -839,10 +852,6 @@ header.contactPage {
   margin-left: 20px;
   margin: auto 20px;
   padding-bottom: 20px;
-}
-
-.blogPost h3 {
-  margin-bottom: 0px;
 }
 
 .blogContent {
@@ -873,15 +882,6 @@ header.contactPage {
           align-items: flex-end;
 }
 
-.relatedPosts h2,
-.comments h2,
-.leaveAComment h2 {
-  font-weight: bold;
-  font-size: 2.5rem;
-  padding-bottom: 30px;
-  border-bottom: 1px solid lightgrey;
-}
-
 .posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,11 +889,10 @@ header.contactPage {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0px;
 }
 
 .posts h4 {
-  margin: 20px 0px 40px 0px;
+  margin-top: 20px;
 }
 
 .comments {
@@ -962,7 +961,7 @@ p.commentTime {
 .carousel p,
 p.commentTime,
 .blogPost p,
-.offeringsList p,
+.portfolioList p,
 .teamPlayers p {
   color: grey;
 }
@@ -970,7 +969,8 @@ p.commentTime,
 .about,
 .carousel,
 .team,
-.offerings {
+.portfolio,
+.footerInfo {
   padding: 100px 0px;
 }
 
@@ -1046,13 +1046,13 @@ h2 {
   right: 0%;
 }
 
-.offerings {
+.portfolio {
   background-image: url(../creative-assets/home-4.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.offeringsList {
+.portfolioList {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -1070,16 +1070,16 @@ h2 {
   padding-right: 30px;
 }
 
-.offeringsList div p,
-.offeringsList div h3 {
+.portfolioList div p,
+.portfolioList div h3 {
   width: 270px;
 }
 
-.offeringsList div {
+.portfolioList div {
   position: relative;
 }
 
-.offeringsList span {
+.portfolioList span {
   position: absolute;
   top: 50%;
   left: -65px;
@@ -1123,22 +1123,21 @@ h2 {
       flex-shrink: 1;
 }
 
-/* --  end of team section style -- */
 .dropUsALine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 600px;
 }
 
 .dropUsALineImg img {
-  width: 50vw;
+  width: calc(100vw / 2);
   max-height: 600px;
-  display: block;
 }
 
 .dropUsALineText {
+  width: calc(100vw / 2);
   margin: auto auto;
+  text-align: center;
   width: 500px;
 }
 

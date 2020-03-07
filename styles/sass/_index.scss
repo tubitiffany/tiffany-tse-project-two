@@ -1,5 +1,4 @@
 // INDEX PAGE HIGH LEVEL STYLES
-
 .primaryBackground {
     background-color: $primaryBackground;
 }
@@ -13,7 +12,7 @@
 .carousel p,
 p.commentTime,
 .blogPost p,
-.offeringsList p,
+.portfolioList p,
 .teamPlayers p  {
     color: $secondaryColor;
 }
@@ -21,7 +20,8 @@ p.commentTime,
 .about,
 .carousel,
 .team,
-.offerings {
+.portfolio,
+.footerInfo {
     padding: 100px 0px;
 
 }
@@ -104,14 +104,14 @@ h2 {
 
 
 
-// OFFERINGS SECTION
-.offerings {
+// PORTFOLIO SECTION
+.portfolio {
     background-image: url(../creative-assets/home-4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.offeringsList {
+.portfolioList {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 300px;
@@ -124,16 +124,16 @@ h2 {
     }
 
 
-.offeringsList div p,
-.offeringsList div h3 {
+.portfolioList div p,
+.portfolioList div h3 {
     width: 270px;
 }
 
-.offeringsList div {
+.portfolioList div {
     position: relative;
 }
 
-.offeringsList span {
+.portfolioList span {
     position: absolute;
     top: 50%;
     left: -65px;
@@ -177,23 +177,22 @@ h2 {
     flex-shrink: 1;
 }
 
-/* --  end of team section style -- */
 
 
-// Drop Us a Line Section
+// DROP US A LINE SECTION
 .dropUsALine {
     display: flex;
-    max-height: 600px;
 }
 
 .dropUsALineImg img {
-    width: 50vw;
+    width: calc(100vw / 2);
     max-height: 600px;
-    display: block;
 }
 
 .dropUsALineText {
+    width: calc(100vw / 2);
     margin: auto auto;
+    text-align: center;
     width: 500px;
 }
 
@@ -209,4 +208,3 @@ button {
     border: none;
     margin: 0 auto;
 }
-// end of drop us a line styles

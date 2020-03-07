@@ -6,10 +6,9 @@ footer h3 {
     line-height: 20px;
 }
 
-footer h3{
-    margin: 60px 0px 30px 0px;
+footer h3 {
+    margin-bottom: 30px;
 }
-
 
 .footerInfo {
     display: flex;
@@ -40,29 +39,37 @@ footer h3{
     text-align: right;
 }
 
-.footerForm form {
-    display: inline-block;
-    height: 100px;
+// FOOTER FORM
+.footerForm {
+    position: relative;
+    margin-top: 30px;
 }
 
 .footerForm button {
-    position: absolute;
-    background-color: #C3DAB7;
+    display: inline-block;
+    background-color: $primaryBackground;
+    width: 50px;
     height: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    border: none;
 }
 
-.footerForm input {
+.footerForm input[type=email] {
     height: 50px;
     width: 300px;
     border: none;
-    position: relative;
     font-size: 1.5rem;
-    padding-left: 30px;
+    display: inline-block;
+    margin-right: 0px;
+    padding-left: 20px;
 }
 
+// CREATIVE AGENCY SECTION
 .creativeAgency {
     height: 150px;
-    border-top: 1px solid grey;
+    border-top: 1px solid $secondaryColor;
     text-align: center;
 }
 

@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="contactPage"> 
+    <header class='contactPage'> 
         <div class="wrapper">  
             <nav>
                 <ul>
                     <div>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                </div>
-                <h1 class="logo">Creative</h1>  
-                <div>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-                </div>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href=".index.html">Portfolio</a></li>
+                    </div>
+                    <a href="index.html">
+                        <h1 class="logo">Creative</h1>  
+                    </a>
+                    <div>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -68,7 +70,7 @@
                 <input type="email" id="email" name="email" placeholder="youremail@domain.com">
 
                 <label for="subject" class="visuallyHidden"> Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="subject (Optional)">
+                <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
 
                 <label for="message" class="visuallyHidden">Message</label>
                 <input type="textarea" cols="700" rows="400" id="comment" name="comment" placeholder="Here goes your message"></textarea>
@@ -88,7 +90,7 @@
                 <p>Email: contact@creative.com</p>
                 <p>Phone 01: 123 456 7890</p>
                 <p>Phone 02: 345 678 9101</p>
-                <ul>
+                <ul class=socialMediaIcons>
                     <li><i class="fab fa-facebook-f"></i></li>
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-instagram"></i></li>
@@ -105,19 +107,20 @@
     
                 </ul>
             </div>
+            
             <div class="subscribeNow">
                 <h3>Subscribe Now</h3>
                 <p>Signup for emails and notifications below.</p>
-                <form action="#" method="#" class="mailingForm" name="mailingForm">
-                    <input type="email" id="mailingForm" name="mailingForm" placeholder="Enter your email">
-                    <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
+                    <form action="#" method="#" class="footerForm" name="footerForm">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="enter your email">
+                        <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </form>
             </div>
-        </div>
-            <div class="creativeAgency">
+        </div>  
+            <div class="creativeAgency">    
                 <h5>Creative Agency</h5>
             </div>
-        </footer>s
+        </footer>
 
     </main>
 

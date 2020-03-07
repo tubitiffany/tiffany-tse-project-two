@@ -15,17 +15,19 @@
             <nav>
                 <ul>
                     <div>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                </div>
-                <h1 class="logo">Creative</h1>  
-                <div>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
-                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-                </div>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                    </div>
+                    <a href="index.html">
+                        <h1 class="logo">Creative</h1>  
+                    </a>
+                    <div>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -35,7 +37,9 @@
     <main class="blogPost">
         <section class="wrapper"> 
             <h1>How to run a creative agency</h1>
-            <p>Home / Blog / <span class="breadCrumbs">How to Run a Creative Agency</span></p>
+            <p>Home / Blog / 
+                <span class="breadCrumbs">How to Run a Creative Agency</span>
+            </p>
             
             <div class="blogInfo">
                 <div>
@@ -112,6 +116,7 @@
                 </div>
             </div>
 
+
             <div class="commentInfo">
                 <div class="commentPic">
                     <img src="./creative-assets/blog-7.jpeg" alt="Profile picture of commentor Jenifer Loopz">
@@ -127,9 +132,9 @@
             </div>
         </section>
 
+
         <section class="leaveAComment wrapper">
             <h2>Leave a comment</h2>
-            
             <form action="#">
                 <label for="name" class="visuallyHidden">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name...">
@@ -138,53 +143,54 @@
                 <input type="email" id="email" name="email" placeholder="youremail@domain.com">
 
                 <label for="subject" class="visuallyHidden"> Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="subject (Optional)">
+                <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
 
                 <label for="comment" class="visuallyHidden">Comment</label>
                 <input type="textarea" id="comment" name="comment" placeholder="Here goes your comment"></textarea>
             
-                <button type="submit"> Submit Comment </button>
+                <button type="submit">Submit Comment</button>
             </form>
         </section>
     </main>
 
+
     <footer>
         <div class="footerInfo">
-            <div class="contactUs">
-                <h3>Contact Us</h3>
-                <p>6591 Orchard Street, Toronto, Ontario</p>
-                <p>Email: contact@creative.com</p>
-                <p>Phone 01: 123 456 7890</p>
-                <p>Phone 02: 345 678 9101</p>
-                <ul>
-                    <li><i class="fab fa-facebook-f"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                </ul>
-            </div>
-            <div class="recentPosts">
-                <h3>Recent Posts</h3>
-                <ul>
-                    <li><p>Conversion hackathon partner</p></li>
-                    <li><p>Network channels entrepreneur</p></li>
-                    <li><p>Return on investment creative</p></li>
-                    <li><p>Assets interaction design venture</p></li>
-                    <li><p>Infographic learning curve</p></li>
+        <div class="contactUs">
+            <h3>Contact Us</h3>
+            <p>6591 Orchard Street, Toronto, Ontario</p>
+            <p>Email: contact@creative.com</p>
+            <p>Phone 01: 123 456 7890</p>
+            <p>Phone 02: 345 678 9101</p>
+            <ul class=socialMediaIcons>
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+        <div class="recentPosts">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><p>Conversion hackathon partner</p></li>
+                <li><p>Network channels entrepreneur</p></li>
+                <li><p>Return on investment creative</p></li>
+                <li><p>Assets interaction design venture</p></li>
+                <li><p>Infographic learning curve</p></li>
 
-                </ul>
-            </div>
-            <div class="subscribeNow">
-                <h3>Subscribe Now</h3>
-                <p>Signup for emails and notifications below.</p>
-                <form action="#" method="#" class="mailingForm" name="mailingForm">
-                    <input type="email" id="mailingForm" name="mailingForm" placeholder="Enter your email">
+            </ul>
+        </div>
+        <div class="subscribeNow">
+            <h3>Subscribe Now</h3>
+            <p>Signup for emails and notifications below.</p>
+                <form action="#" method="#" class="footerForm" name="footerForm">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="enter your email">
                     <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                 </form>
-            </div>
         </div>
-            <div class="creativeAgency">
-                <h5>Creative Agency</h5>
-            </div>
+    </div>  
+        <div class="creativeAgency">    
+            <h5>Creative Agency</h5>
+        </div>
     </footer>
 </body>
 </html>
