@@ -37,6 +37,10 @@ h2 {
 
 
 // ABOUT SECTION
+.about h2 {
+    display: none;
+}
+
 .aboutImaging {
     position: relative;
 }
@@ -74,7 +78,7 @@ h2 {
 .carousel p {
     font-style: italic;
     text-align: center;
-    width: 700px;
+    width: 50vw;
     margin: 30px auto;
 }
 
@@ -173,9 +177,6 @@ h2 {
     margin: auto auto;
 }
 
-.team ul li {
-    flex-shrink: 1;
-}
 
 
 

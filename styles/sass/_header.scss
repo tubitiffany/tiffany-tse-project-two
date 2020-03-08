@@ -1,3 +1,13 @@
+.mobileHeaderNav {
+    font-size: 3rem;
+    padding-top: 30px;
+    display: none;
+}
+
+.mobileLogo {
+    display: none;
+}
+
 header {
     height: 100vh;
     background-image: url(../creative-assets/home-1.jpeg);
@@ -11,11 +21,11 @@ header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+        div {
+            display: flex;
+        }
 }
 
-header ul div {
-    display: flex;
-}
 
 header li {
     margin: 30px;

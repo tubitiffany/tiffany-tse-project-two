@@ -1,0 +1,309 @@
+@media (max-width: 1200px) {
+    // BP1 GLOBAL HEADER
+    header .wrapper {
+        width: 90vw;
+    }
+
+    // BP1 INDEX TEAM
+    .team ul {
+        grid-template-columns: repeat(auto-fill, 250px);
+    }
+
+    .team img {
+        max-width: 250px;
+    }
+
+    // BP1 BLOG RELATED POSTS 
+    .posts img {
+        max-width: calc(80vw / 3);
+    }
+}
+
+
+
+@media (max-width: 990px) {
+    // BP2 GLOBAL HEADER
+    header li {
+        margin: 30px 15px;
+    }
+
+    // BP2 GENERAL
+    .about,
+    .carousel,
+    .team,
+    .portfolio,
+    .footerInfo {
+        padding: 50px 0px;
+    }
+
+    // BP2 INDEX ABOUT
+    .about h2 {
+        display: block;
+    }
+
+    .aboutText {
+        display: none;
+    }
+
+    .aboutImage {
+        padding-top: 20px;
+    }
+
+    // BP2 INDEX CAROUSEL
+    .carousel p {
+        width: 70vw;
+    }
+
+    .portfolio {
+        background: $primaryBackground;
+    }
+
+    // BP2 INDEX TEAM 
+
+    .teamPlayers {
+    padding: 10px 5% 10px 5%;
+}
+
+    .team ul {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    }
+    
+    .team li img {
+        width: calc(70vw / 2);
+    }
+
+    // BP2 INDEX DROP US A LINE
+    .dropUsALineText p {
+        margin: 30px 20px;
+    }
+
+    // BP2 GLOBAL FOOTER 
+    .footerInfo, {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contactUs,
+    .recentPosts,
+    .subscribeNow {
+        margin-top: 50px;
+    }
+
+    footer h3,
+    .contactUs p,
+    .recentPosts p,
+    .subscribeNow,
+    .subscribeNow h3 {
+        text-align: center;
+    }
+
+    .contactUs ul {
+        margin: 0 auto;
+    }
+
+    .footerForm button {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    // BP2 BLOG SECTION
+    .blogPost h1 {
+        line-height: 40px;
+    }
+
+    .blogAuthor {
+        flex-grow: 3;
+    }
+    
+    .blogInfo {
+        flex-wrap: wrap;
+    }
+
+    // BP2 BLOG RELATED POSTS 
+    .relatedPosts .posts {
+        display: block;
+    }
+
+    .posts img,
+    .posts h4 {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .posts h4 {
+        margin-bottom: 30px;
+    }
+
+    // BP2 CONTACT PAGE CONTACT INFO 
+    .contactInfo {
+        display: block;
+    }
+
+    .contactInfo div:nth-of-type(2) {
+        border: none;
+    }
+    
+    .contactInfo div {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    // BP3 GLOBAL HEADER
+    header {
+        height: 70vh;
+        background-position: contain;
+        background-position-y: -170px;
+    }
+
+    .desktopLogo {
+        display: none;
+    }
+
+    .mobileLogo {
+        display: block;
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    // couldn't get hamburger menu to work 
+    header ul {
+        display: none;
+        div {
+            display: block;
+        }
+        li {
+            margin: 10px 0px;
+        }
+    }
+
+    .mobileHeaderNav {
+        display: inline-block;
+        position: absolute;
+        top: -15px;
+        right: 30px;
+    }
+
+    header a:hover {
+        text-decoration: none;
+    }
+
+    .mobileHeaderNav:hover ul,
+    .mobileheaderNav:focus-within ul{
+        display: block;
+    }
+
+    // BP3 INDEX ABOUT 
+    .aboutInfo {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .aboutInfo div {
+        margin: 30px auto;
+    }
+
+    .aboutImage {
+        width: 80%
+    }
+
+    // BP3 INDEX CAROUSEl
+    .carousel img {
+        width: 80%;
+    }
+
+    .carousel i {
+        font-size: 2rem;
+    }
+
+    // BP3 INDEX OFFERINGS
+    .portfolioList {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .portfolioList div p,
+    .portfolioList div h3 {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .portfolioList div {
+        margin-bottom: 30px;
+    }
+
+    .portfolioList span {
+        display: none;
+    }
+
+    // BP3 INDEX DROP US A LINE
+    .dropUsALineImg img {
+        display: none;
+    }
+    
+    .dropUsALineText {
+        width: 80vw;
+        padding: 40px 10px;
+    }
+
+    // BP3 BLOG COMMENTS
+    .commentInfo {
+        display: block;
+    }
+
+    .blogInfo p {
+        margin-top: 0px;
+    }
+
+    .tip {
+        display: none;
+    }
+
+
+    // BP3 BLOG AND CONTACT FORM
+    input[type=text],
+    input[type=email] {
+        width: 60vw;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    // BP4 INDEX ABOUT
+    .aboutInfo div {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // BP4 INDEX TEAM {
+    .team ul {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .team img,
+    .team h4 {
+        margin: 15px auto;
+    }
+
+    .team img {
+        min-width: 50vw;
+    }
+
+    .team h4 {
+        margin-top: 30px;
+    }
+
+
+}
